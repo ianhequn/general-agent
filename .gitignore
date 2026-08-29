@@ -1,0 +1,21 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# pytest
+.pytest_cache/
+
+# virtual environment
+.venv/
+venv/
+
+# environment / secrets
+.env
+.env.*
+
+# runtime logs
+trajectory.json
+
+# editor
+.vscode/
+.idea/

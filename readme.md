@@ -2,12 +2,15 @@
 最终实现出自己的codex或者pi 
 持续更新
 
-v0：
+1
 实现最简单的ai loop 使用message同时接受observation和lm_output
 注入os环境参数 sk deepseek api
 使用最简单的add算法检验 agent是否能自主循环
 
-v0.5
+2
 加上了returncode作为执行output 同时结构化observation 
 添加了exit状态可以区分是完成任务 额度超限 
 添加json 每一次运行结束保存 trajectory 里面有message returncode exit_status 以及now_calls引用次数
+
+3
+今天去写了这个tools 首先是tools schemas工具说明表示有两个工具一个是run command需要字符串参数command 一个是finish_task需要summary 我之前一直在想为什么需要agent判断和程序判断两个结束的终止 后来想通是模型认为结束和agent loop强制结束的区别
